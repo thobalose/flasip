@@ -7,21 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <!-- styles -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="{{  url_for('static', filename='css/materialize.css')  }}" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{{  url_for('static', filename='css/materialize.css')  }}" type="text/css" rel="stylesheet" media="screen,projection"
+    />
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection"
+    />
     <title>FlasIp</title>
 </head>
 
 <body>
     <nav class="light-blue darken-4" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">FlasIp</a>
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="/" class="brand-logo">FlasIp</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#">About</a>
+                </li>
             </ul>
             <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#">About</a>
+                </li>
             </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
     </nav>
     <div class="container">
@@ -30,10 +39,17 @@
                 <div class="card-panel grey lighten-5 z-depth-1">
                     <div class="row valign-wrapper">
                         <div class="col s2">
-                            <img src="{{ url_for('static', filename='img/docker.png') }}" alt="" class="materialboxed responsive-img">
+                            <img src="{{ url_for('static', filename='img/gce.png') }}" alt="" class="materialboxed responsive-img">
                         </div>
                         <div class="col s10">
-                            <h4 class="black-text"><b><i>{{hostname}}</i></b> : <b><i>{{host_ip}}</i></b></h4>
+                            <h4 class="black-text">
+                                <b>
+                                    <i>{{hostname}}</i>
+                                </b> :
+                                <b>
+                                    <i>{{host_ip}}</i>
+                                </b>
+                            </h4>
                         </div>
                     </div>
                 </div>
