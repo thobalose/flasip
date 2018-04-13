@@ -10,7 +10,7 @@
 
 1.  Download the [Google App Engine Python SDK](https://cloud.google.com/appengine/downloads) for your platform.
 
-2.  Many samples require extra libraries to be installed. If there is a `requirements.txt`, you will need to install the dependencies with [`pip`](pip.readthedocs.org).
+2.  This app requires extra libraries to be installed. Install the dependencies with [`pip`](pip.readthedocs.org).
 
         pip install -t lib -r requirements.txt
 
@@ -20,12 +20,10 @@
 
 4.  Visit `http://localhost:8080` to view your application.
 
-Some samples may require additional setup. Refer to individual sample READMEs.
-
 ## Deploying to GAE
 
 1.  Download the [Google App Engine Python SDK](https://cloud.google.com/appengine/downloads) for your platform.
-2.  Many samples require extra libraries to be installed. If there is a `requirements.txt`, you will need to install the dependencies with [`pip`](pip.readthedocs.org).
+2.  This app requires extra libraries to be installed. Install the dependencies with [`pip`](pip.readthedocs.org).
 
         pip install -t lib -r requirements.txt
 
