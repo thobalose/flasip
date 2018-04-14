@@ -1,6 +1,8 @@
 FROM python:2.7
-MAINTAINER Thoba Lose "lose.thoba@gmail.com"
+LABEL maintainer="lose.thoba@gmail.com" 
+
 RUN apt-get update -y --fix-missing && \
+    apt-get upgrade -y && \
     pip install -U pip && \
     mkdir code
 COPY requirements.txt /code
