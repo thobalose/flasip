@@ -10,6 +10,22 @@
 
 ## Up and Running
 
+Prerequisites
+
+- [docker](https://docs.docker.com/)
+
+### Build and run
+
+To build a docker image for the flasip app and run it inside a container execute
+
 ```sh
-$ docker run -it -p 5000:5000 thoba/flasip
+docker build -t thoba/flasip .
 ```
+
+The above with create an image with the `latest` tag. To run the container execute
+
+```sh
+docker run -it -p 5000:5000 thoba/flasip
+```
+
+Visit http://localhost:5000 in your browser.
