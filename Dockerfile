@@ -1,5 +1,4 @@
-FROM python:2.7-alpine
-LABEL maintainer="lose.thoba@gmail.com" 
+FROM python:3-alpine
 
 RUN apk update \
     && apk upgrade \
@@ -16,4 +15,4 @@ COPY . /code
 
 EXPOSE 5000
 
-CMD ["python", "main.py"]
+CMD ["python", "run.py"]
