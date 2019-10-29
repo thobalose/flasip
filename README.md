@@ -14,6 +14,8 @@ Prerequisites
 
 - [docker](https://docs.docker.com/)
 
+> - [helm](https://helm.sh/) and [minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)
+
 ### Build and run
 
 To build a docker image for the flasip app and run it inside a container execute
@@ -29,3 +31,7 @@ docker run -it -p 5000:5000 thoba/flasip
 ```
 
 Visit http://localhost:5000 in your browser.
+
+## Helm chart
+
+To deploy the application to Minikube kindly see [`flasip-chart/`](./flasip-chart/).
