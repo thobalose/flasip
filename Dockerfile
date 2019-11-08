@@ -1,7 +1,6 @@
-FROM python:3-alpine
+FROM python:3-slim
 
-RUN apk update \
-    && apk upgrade \
+RUN apt-get update \
     && pip install -U pip \
     && mkdir /code
 
